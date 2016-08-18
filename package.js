@@ -15,6 +15,7 @@ Package.onUse(function (api) {
   api.use('ecmascript');
   api.use('session');
   api.use('blaze-html-templates');
+  api.imply('blaze-html-templates');
   api.use('templating', 'client');
   api.use('accounts-ui');
   api.use('thereactivestack:blazetoreact@1.0.2');
