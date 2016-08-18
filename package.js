@@ -1,6 +1,7 @@
+/* eslint-disable  */
 Package.describe({
   name: 'okgrow:accounts-ui-react',
-  version: '0.0.1',
+  version: '0.6.1',
   // Brief, one-line summary of the package.
   summary: 'Accounts-ui wrapped in React.',
   // URL to the Git repository containing the source code for this package.
@@ -16,7 +17,6 @@ Package.onUse(function (api) {
   api.use('session');
   api.use('blaze-html-templates');
   api.imply('blaze-html-templates');
-  api.use('templating', 'client');
   api.use('accounts-ui');
   api.use('thereactivestack:blazetoreact@1.0.2');
   api.addFiles('style.css');
