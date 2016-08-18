@@ -14,6 +14,7 @@ Package.onUse(function (api) {
   api.versionsFrom('1.4.0.1');
   api.use('ecmascript');
   api.use('session');
+  api.use('blaze-html-templates');
   api.use('accounts-ui');
   api.use('thereactivestack:blazetoreact@1.0.2');
   api.addFiles('style.css');
