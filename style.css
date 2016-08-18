@@ -4,14 +4,25 @@
   -webkit-box-shadow: none;
 }
 
+#login-buttons a,
+.accounts-dialog a {
+  text-decoration: none;
+  color: #666;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
 #login-buttons .login-button,
 .accounts-dialog .login-button {
   border-radius: 2px;
   background: #333;
   border: 0;
+  padding: 8px;
 }
 #login-buttons .login-button:hover,
-.accounts-dialog .login-button:hover {
+.accounts-dialog .login-button:hover,
+#login-buttons .login-button:active,
+.accounts-dialog .login-button:active {
   background: #666;
 }
 
@@ -25,9 +36,24 @@
 }
 
 
-.visibile .login-link-text,
+.visible .login-link-text,
 .visible .login-close-text {
 	display: none;
+}
+
+/* HACK: Hide the close text and replace with cancel */
+.changePassword #login-buttons .login-close-text {
+  display: block;
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+  float: right;
+}
+
+.changePassword .login-close-text:after {
+  content: 'Cancel';
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
 }
 
 .hideLinks .additional-link-container {

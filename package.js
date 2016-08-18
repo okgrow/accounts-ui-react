@@ -25,6 +25,7 @@ Package.onUse(function (api) {
 
 Npm.depends({
   classnames: '2.2.5',
+  'react-komposer': '1.13.1',
 });
 
 Package.onTest(function (api) {

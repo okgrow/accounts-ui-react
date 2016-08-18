@@ -32,7 +32,7 @@ export default App;
 
 Show the login form by default using the `visible` prop.
 
-`<LoginButtons visible="true" />`
+`<LoginButtons visible />`
 
 ### State
 
@@ -44,7 +44,7 @@ Set the initial state of the login form using the `state` prop.  Choose from `si
 
 Stop your user changing the state using the `hideLinks` prop.  A good example of this might be when you are separating our your signUp and signIn forms onto different routes.
 
-`<LoginButtons state="signUp" visible="true" hideLinks="true" />`
+`<LoginButtons state="signUp" visible hideLinks />`
 
 This will generate a `signUp` form that the user can't toggle or hide.
 
