@@ -26,7 +26,7 @@ const composer = (props, onData) => {
   onData(null, { className });
 };
 
-const LoginButtons = (props) => {
+const LoginButtonsComponent = (props) => {
   const { className } = props;
 
   const BlazeLoginButtons = BlazeToReact('loginButtons');
@@ -37,4 +37,4 @@ const LoginButtons = (props) => {
   );
 };
 
-export default composeWithTracker(composer)(LoginButtons);
+export const LoginButtons = composeWithTracker(composer)(LoginButtonsComponent);
