@@ -8,6 +8,19 @@ The Meteor accounts-ui we know and love, wrapped in React.
 
 You'll also need to add an [accounts login provider](https://guide.meteor.com/accounts.html#accounts-ui), e.g. `meteor add accounts-password`.
 
+This package uses Blaze and is incompatible with the static-html package. If you get this error when starting your app:
+
+```
+error: conflict: two packages included in the app (templating and static-html) are both trying to handle *.html
+```
+
+then you will need to run the following:
+
+```
+meteor remove static-html
+meteor add blaze-html-templates
+```
+
 ## Basic Usage
 
 Simply import and use the `<LoginButtons />` component.  For example:
@@ -51,3 +64,15 @@ This will generate a `signUp` form that the user can't toggle or hide.
 ## Styles
 
 We have made the styles a little simpler than the original ones, but recommend you skin the form to match your app.
+
+## Removing this package
+
+Normally, you can just remove this package with `meteor remove okgrow:accounts-ui-react`. 
+
+If you don't have blaze-html-templates installed, though, your app may fail to render, throwing an error in the browser console:
+
+```
+Uncaught Invariant Violation: _registerComponent(...): Target container is not a DOM element.
+```
+
+To solve this, you can add either static-html or blaze-html-templates as appropriate to your app's needs.
