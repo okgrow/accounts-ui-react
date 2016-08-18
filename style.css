@@ -1,0 +1,35 @@
+.accounts-dialog {
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#login-buttons .login-button,
+.accounts-dialog .login-button {
+  border-radius: 2px;
+  background: #333;
+  border: 0;
+}
+#login-buttons .login-button:hover,
+.accounts-dialog .login-button:hover {
+  background: #666;
+}
+
+#login-buttons input[type=text],
+.accounts-dialog input[type=text],
+#login-buttons input[type=email],
+.accounts-dialog input[type=email],
+#login-buttons input[type=password],
+.accounts-dialog input[type=password] {
+  border-radius: 2px;
+}
+
+
+.visibile .login-link-text,
+.visible .login-close-text {
+	display: none;
+}
+
+.hideLinks .additional-link-container {
+  display: none;
+}
