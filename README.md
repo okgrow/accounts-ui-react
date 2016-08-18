@@ -6,6 +6,8 @@ The Meteor accounts-ui we know and love, wrapped in React.
 
 `meteor add okgrow:accounts-ui-react`
 
+You'll also need to add an [accounts login provider](https://guide.meteor.com/accounts.html#accounts-ui), e.g. `meteor add accounts-password`.
+
 ## Basic Usage
 
 Simply import and use the `<LoginButtons />` component.  For example:
