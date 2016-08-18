@@ -77,3 +77,8 @@ Uncaught Invariant Violation: _registerComponent(...): Target container is not a
 ```
 
 To solve this, you can add either `static-html` or `blaze-html-templates` as appropriate to your app's needs.
+
+## Todo
+
+- Add tests
+- Verify social logins

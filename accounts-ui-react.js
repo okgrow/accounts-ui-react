@@ -7,19 +7,21 @@ import { composeWithTracker } from 'react-komposer';
 
 const composer = (props, onData) => {
   const { state, visible, hideLinks } = props;
+
+  // Generate classnames that identify the props and the flow
   let className = '';
-  // Adjust the classnames to the flow
   className = classNames({
     visible,
     hideLinks,
     changePassword: Session.get('Meteor.loginButtons.inChangePasswordFlow'),
   });
 
-  // If visible is set, keep the Session var as true
+  // If visible is set, keep the Session value as true
   if (visible && !Session.get('Meteor.loginButtons.dropdownVisible')) {
     Session.set('Meteor.loginButtons.dropdownVisible', true);
   }
 
+  // Set a specific state based on props
   if (state === 'signUp') Session.set('Meteor.loginButtons.inSignupFlow', true);
   if (state === 'forgotPassword') Session.set('Meteor.loginButtons.inForgotPasswordFlow', true);
 
@@ -35,6 +37,10 @@ const LoginButtonsComponent = (props) => {
       <BlazeLoginButtons {...props} />
     </div>
   );
+};
+
+LoginButtonsComponent.propTypes = {
+  className: React.PropTypes.string,
 };
 
 export const LoginButtons = composeWithTracker(composer)(LoginButtonsComponent);
