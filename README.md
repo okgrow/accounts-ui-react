@@ -30,7 +30,7 @@ export default App;
 
 ### Visible
 
-Show the login form by default using the `visible` prop.
+The login form is hidden by default with a dropdown behavior.  If you want to show the dropdown by default, use the `visible` prop.
 
 `<LoginButtons visible />`
 
