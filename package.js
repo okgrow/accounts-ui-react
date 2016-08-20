@@ -1,7 +1,7 @@
 /* eslint-disable  */
 Package.describe({
   name: 'okgrow:accounts-ui-react',
-  version: '0.6.3',
+  version: '0.7.0',
   // Brief, one-line summary of the package.
   summary: 'Accounts-ui wrapped in React.',
   // URL to the Git repository containing the source code for this package.
@@ -21,11 +21,6 @@ Package.onUse(function (api) {
   api.use('thereactivestack:blazetoreact@1.0.2');
   api.addFiles('style.css');
   api.mainModule('accounts-ui-react.js');
-});
-
-Npm.depends({
-  classnames: '2.2.5',
-  'react-komposer': '1.13.1',
 });
 
 Package.onTest(function (api) {
