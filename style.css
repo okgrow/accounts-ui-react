@@ -56,6 +56,11 @@
   border-radius: 2px;
 }
 
+#login-buttons .login-image {
+  top: 9px;
+  left: 9px;
+}
+
 
 .visible .login-link-text,
 .visible .login-close-text {
