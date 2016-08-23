@@ -1,23 +1,44 @@
 .accounts-dialog {
   border: 0;
-  box-shadow: none;
   -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#login-dropdown-list {
+  z-index: 1;
+}
+
+.accounts-dialog {
+  padding: 15px;
+
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+}
+
+.accounts-dialog .accounts-close {
+  top: 0;
+  right: 0;
+
+  padding: 5px 10px
 }
 
 #login-buttons a,
 .accounts-dialog a {
   text-decoration: none;
+
   color: #666;
+
   font-family: sans-serif;
   font-size: 12px;
 }
 
 #login-buttons .login-button,
 .accounts-dialog .login-button {
+  padding: 8px;
+
+  border: 0;
   border-radius: 2px;
   background: #333;
-  border: 0;
-  padding: 8px;
 }
 #login-buttons .login-button:hover,
 .accounts-dialog .login-button:hover,
@@ -44,15 +65,19 @@
 /* HACK: Hide the close text and replace with cancel */
 .changePassword #login-buttons .login-close-text {
   display: block;
-  text-indent: -9999px;
-  line-height: 0; /* Collapse the original line */
   float: right;
+
+  text-indent: -9999px;
+
+  line-height: 0; /* Collapse the original line */
 }
 
 .changePassword .login-close-text:after {
+  display: block;
+
   content: 'Cancel';
   text-indent: 0;
-  display: block;
+
   line-height: initial; /* New content takes up original line height */
 }
 
