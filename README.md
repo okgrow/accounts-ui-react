@@ -7,16 +7,19 @@ The Meteor accounts-ui we know and love, wrapped in React.
 Assuming you've already got a React project up and running:
 
 - Add the meteor package
+
 ```
 meteor add okgrow:accounts-ui-react
 ```
 
 - Add the npm dependencies for this package
+
 ```
 npm install --save react-komposer classnames
 ```
 
 - Add at least one [accounts login provider](https://guide.meteor.com/accounts.html#accounts-ui). For example:
+
  ```
 meteor add accounts-password
 ```
