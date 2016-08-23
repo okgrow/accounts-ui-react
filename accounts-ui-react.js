@@ -11,6 +11,7 @@ const composer = (props, onData) => {
   // Generate classnames that identify the props and the flow
   let className = '';
   className = classNames({
+    'accounts-ui-react': true,
     visible,
     hideLinks,
     changePassword: Session.get('Meteor.loginButtons.inChangePasswordFlow'),
