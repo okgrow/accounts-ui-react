@@ -9,9 +9,8 @@ export default class App extends Component {
         <header>
           <h1>Todo List</h1>
         </header>
-        <LoginButtons />
         <ul>
-
+          <LoginButtons />
         </ul>
       </div>
     );
