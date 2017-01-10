@@ -41,6 +41,7 @@ const App = () => (
 
 export default App;
 ```
+Example at: [https://github.com/okgrow/accounts-ui-react-example](https://github.com/okgrow/accounts-ui-react-example)
 
 ## Advanced Usage via Props
 
