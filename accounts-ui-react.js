@@ -3,7 +3,7 @@ import BlazeToReact from 'meteor/thereactivestack:blazetoreact';
 import React from 'react';
 import { Session } from 'meteor/session';
 import classNames from 'classnames';
-import { composeWithTracker } from 'react-komposer';
+import composeWithTracker from './composeWithTracker';
 
 const composer = (props, onData) => {
   const { state, visible, hideLinks } = props;

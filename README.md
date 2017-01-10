@@ -94,6 +94,14 @@ Uncaught Invariant Violation: _registerComponent(...): Target container is not a
 
 To solve this, you can add either `static-html` or `blaze-html-templates` as appropriate to your app's needs.
 
+## Update Note
+
+###v0.8
+Note that this package uses `composeWithTracker`, which was removed in Komposer2.0.
+In `v0.8` of this package, the following snippet which was copied into `composeWithTracker.js` is used to bring back `composeWithTracker`'s functionality.
+https://github.com/TobyEalden/react-komposer/blob/3c87a1724590cb24303a2c4d7ec8ed88f834e5db/README.md#for-meteors-tracker
+
+
 ## Todo
 
 - Add tests
