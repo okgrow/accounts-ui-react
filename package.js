@@ -29,3 +29,8 @@ Package.onTest(function (api) {
   api.use('okgrow:accounts-ui-react');
   api.mainModule('accounts-ui-react-tests.js');
 });
+
+Npm.depends({
+  classnames: '2.2.5',
+  'react-komposer': '2.0.0',
+});
